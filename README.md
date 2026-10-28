@@ -510,6 +510,26 @@ bwc/
 
 **Tech stack:** Node.js (zero runtime deps) · React 18 · TypeScript · Tailwind CSS · shadcn-style components · Vite · GSAP
 
+### Main Logic 
+```
+#!/usr/bin/env bash
+WARN=80; CRIT=90; STATE=/var/tmp/storage.state; touch "$STATE"; rc=0
+
+df -P | awk 'NR>1 && $1 ~ /^\/dev\//{print $6, $5}' | while read -r mp pct; do
+  pct=${pct%\%}
+  ipct=$(df -iP "$mp" | awk 'NR==2{gsub("%","",$5); print $5}')
+  for kind in space:$pct inode:$ipct; do
+    k=${kind%%:*}; v=${kind##*:}; [[ $v =~ ^[0-9]+$ ]] || continue
+    level=ok; (( v >= WARN )) && level=warning; (( v >= CRIT )) && level=critical
+    prev=$(grep "^$mp:$k " "$STATE" | cut -d' ' -f2)
+    if [[ "$level" != "${prev:-ok}" ]]; then                       # alert only on state change
+      logger -t storage-monitor -p user.${level/critical/crit} "$mp $k ${v}% -> $level"
+      sed -i "\|^$mp:$k |d" "$STATE"; echo "$mp:$k $level" >> "$STATE"
+    fi
+  done
+done
+```
+
 ### 👥 Team
 
 | Member | Role | GitHub |
