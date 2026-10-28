@@ -10,7 +10,18 @@ Disk utilization · Inode usage · Storage growth · Administrator alerts · Dai
 
 ---
 
+### 📄 Project Documents
+
+| Document | Link |
+|----------|------|
+| 📘 Project Report | [Project-Report.pdf](./Project-Report.pdf) |
+| 🎞️ Project Presentation (PDF) | [Project-Presentation.pdf](./Project-Presentation.pdf) |
+| 🎨 Project Presentation (Canva) | [View on Canva](https://canva.link/m0wcjxq7cf8hn4h) |
+
+---
+
 ## Table of Contents
+0. [Project Documents](#-project-documents)
 1. [Problem Statement](#1-problem-statement)
 2. [Problem Understanding and Proposed Solution](#2-problem-understanding-and-proposed-solution)
 3. [System Architecture / Design Diagram](#3-system-architecture--design-diagram)
@@ -112,6 +123,8 @@ flowchart LR
   S --> UI[React dashboard]
   D --> R[Daily report]
 ```
+
+![LinuxCats flow diagram](./linuxcats-flow-diagram.png)
 
 **Design decisions**
 
@@ -482,6 +495,9 @@ Command Prompt: `cd bwc && npm start` — or just **double-click `run.bat`**.
 
 ```text
 bwc/
+├── Project-Report.pdf          # full project report
+├── Project-Presentation.pdf    # presentation slides (PDF)
+├── linuxcats-flow-diagram.png  # system flow diagram
 ├── server/
 │   ├── monitor.mjs      # collector, growth, alerts, reports (cross-platform)
 │   └── index.mjs        # launcher: collector loop + HTTP API + static site
