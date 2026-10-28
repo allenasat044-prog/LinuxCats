@@ -1,2 +1,5 @@
 2026-10-10T16:05:14.052Z [FIRING] WARNING Shashanks-Laptop.local: /System/Volumes/Data projected full in 4.3 days at 69.61 GiB/day
 2026-10-10T16:15:58.439Z [RESOLVED] WARNING Shashanks-Laptop.local: /System/Volumes/Data growth back to normal (was warning)
+2026-10-14T12:57:04.753Z [FIRING] CRITICAL Shashanks-Laptop.local: /Volumes/Metal Gear Solid V Ground Zeroes toxicgames.in space 91.8% used (>= 90%), 398.47 MiB free
+2026-10-15T06:28:57.523Z [RESOLVED] CRITICAL Shashanks-Laptop.local: /Volumes/Metal Gear Solid V Ground Zeroes toxicgames.in space back to normal (was critical)
+2026-10-24T21:53:59.725Z [FIRING] WARNING Shashanks-Laptop.local: /System/Volumes/Data projected full in 7.9 days at 38.20 GiB/day

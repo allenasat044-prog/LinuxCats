@@ -1,0 +1,43 @@
+==============================================================================
+ STORAGE REPORT  Shashanks-Laptop.local   14/10/2026, 12:00:11 am
+ darwin arm64  Darwin 25.6.0   uptime 2.24 days
+==============================================================================
+
+MOUNT                 TYPE           SIZE       USED       FREE   USE%  INODE%  STATUS
+------------------------------------------------------------------------------
+/System/Volumes/iSCPr apfs     500.00 MiB  17.39 MiB 482.61 MiB    3.5     0.0  OK
+/System/Volumes/Data  apfs     460.43 GiB 112.05 GiB 348.39 GiB   24.3     0.0  OK
+/Volumes/LVMData      apfs       5.00 GiB   2.03 GiB   2.97 GiB   40.6     0.0  OK
+/Volumes/LVMData 1    apfs       5.00 GiB   2.03 GiB   2.97 GiB   40.6     0.0  OK
+
+GROWTH (least-squares over last 24h of samples)
+------------------------------------------------------------------------------
+/System/Volumes/iSCPreboot 2.31 KiB/day, 0 inodes/day, full in 213982.9 days
+/System/Volumes/Data   -2.44 GiB/day, 10069 inodes/day, not growing
+/Volumes/LVMData       -27.81 KiB/day, -5 inodes/day, not growing
+/Volumes/LVMData 1     -27.81 KiB/day, 0 inodes/day, not growing
+
+LARGEST DIRECTORIES
+------------------------------------------------------------------------------
+/System/Volumes/iSCPreboot:
+      5.48 MiB  /System/Volumes/iSCPreboot/SFR
+     44.00 KiB  /System/Volumes/iSCPreboot/SystemRecovery
+     16.00 KiB  /System/Volumes/iSCPreboot/959AA465-741C-4F47-8A14-BEB4400FCBAE
+      8.00 KiB  /System/Volumes/iSCPreboot/5F9234CF-C7F4-496F-B5F4-646CA2537157
+      4.00 KiB  /System/Volumes/iSCPreboot/3D3287DE-280D-4619-AAAB-D97469CA9C71
+/System/Volumes/Data:
+     44.99 GiB  /System/Volumes/Data/Users
+     11.54 GiB  /System/Volumes/Data/Applications
+      7.25 GiB  /System/Volumes/Data/private
+      6.16 GiB  /System/Volumes/Data/opt
+      5.37 GiB  /System/Volumes/Data/System
+/Volumes/LVMData:
+/Volumes/LVMData 1:
+
+ACTIVE ALERTS
+------------------------------------------------------------------------------
+ none
+
+ALERT EVENTS (24h)
+------------------------------------------------------------------------------
+ none
